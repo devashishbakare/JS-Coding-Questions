@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Complex DOM Practice</title>
+  </head>
+  <body>
+    <div id="app-container">
+      <header class="site-header">
+        <h1 id="main-title">Complex DOM Selection</h1>
+      </header>
+
+      <main>
+        <article class="post status-published" data-category="tech">
+          <h2 class="post-title">Article 1 Title</h2>
+          <div class="content">
+            <p>First paragraph of the article.</p>
+            <ul class="tag-list">
+              <li class="tag">JavaScript</li>
+              <li class="tag">HTML</li>
+              <li class="tag">CSS</li>
+            </ul>
+          </div>
+          <a href="/read-more" class="read-more-link">Read More</a>
+        </article>
+
+        <article class="post status-draft" data-category="code">
+          <h2 class="post-title">Article 2 Title (Draft)</h2>
+          <div class="content">
+            <p>This is a draft article.</p>
+            <ul class="tag-list">
+              <li class="tag">React</li>
+              <li class="tag">Node</li>
+            </ul>
+          </div>
+          <!-- No "Read More" link for drafts -->
+        </article>
+
+        <section id="sidebar">
+          <h3>Related Links</h3>
+          <a href="/link1">Link One</a>
+          <a href="/link2" class="external">Link Two</a>
+          <a href="/link3">Link Three</a>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2024</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
